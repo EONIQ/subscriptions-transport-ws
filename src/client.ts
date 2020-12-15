@@ -667,7 +667,9 @@ export class SubscriptionClient {
         break;
 
       default:
-        throw new Error('Invalid message type!');
+        break;
+        // Do not throw exception to client if it's invalid 
+        // throw new Error('Invalid message type!');
     }
   }
 
